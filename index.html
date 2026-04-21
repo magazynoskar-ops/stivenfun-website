@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StivenFun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="other-images/web-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">StivenFun</div>
+        </div>
+        <div class="nav-center">
+            <a href="#home" class="nav-btn">Strona główna</a>
+            <a href="#portfolio" class="nav-btn">Prace graficzne</a>
+            <a href="#trusted" class="nav-btn">Zaufali mi</a>
+        </div>
+    </nav>
+
+    <section id="home" class="section home-section">
+        <div class="home-content">
+            <div class="home-layout">
+                <h1>Witaj w moim świecie</h1>
+                <p class="home-subtitle"><strong>stiven - content managment & creation</strong></p>
+                <p class="about-text">Cześć! Jestem Oskar, w internecie znany jako "stiven". Zajmuje się grafiką 3D oraz tworzeniem treści w internecie. Najczęściej jestem odpowiedzialny za zadbanie o "zaplecze techniczne" znanych twórców internetowych, którzy chętnie polecają moje usługi. :)</p>
+                <div class="home-actions">
+                    <a href="error.html" class="cta-btn cta-order">Złóż zamówienie</a>
+                    <a href="https://discord.com/invite/jeJgzJvSku" class="cta-btn cta-contact">Skontaktuj się</a>
+                </div>
+            </div>
+            <div class="home-model-wrap">
+                <img src="other-images/sword-model.png" alt="Model miecza" class="home-model">
+            </div>
+        </div>
+        <a href="#portfolio" class="section-arrow" aria-label="Przejdź do sekcji portfolio">↓</a>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="portfolio-container">
+            <h2 class="portfolio-title">Wybierz kategorie</h2>
+            <div class="filter-buttons" role="tablist" aria-label="Filtr portfolio">
+                <button id="btn-characters" class="filter-btn active" data-category="characters" aria-pressed="true">Postacie</button>
+                <button id="btn-items" class="filter-btn" data-category="items" aria-pressed="false">Przedmioty</button>
+            </div>
+            <div id="gallery" class="gallery"></div>
+            <div id="pagination" class="pagination"></div>
+        </div>
+        <a href="#trusted" class="section-arrow" aria-label="Przejdź do sekcji zaufali mi">↓</a>
+    </section>
+
+    <section id="trusted" class="section">
+        <div class="trusted-container">
+            <h2>Zaufali mi</h2>
+            <div class="carousel">
+                <div class="carousel-inner" id="trusted-carousel"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-left">StivenFun</div>
+        <div class="footer-right">
+            <a href="#trusted" class="footer-btn">Kontakt</a>
+            <a href="#home" class="footer-btn">Strona główna</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿{
+  "name": "stivenfun-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio site ready for GitHub + Vercel deployment",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs . 3000",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist 4173"
+  }
+}
