@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Static portfolio site ready for GitHub + Vercel deployment",
+  "main": "server.cjs",
   "type": "module",
   "engines": {
     "node": ">=18"
